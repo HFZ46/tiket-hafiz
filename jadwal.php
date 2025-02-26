@@ -226,22 +226,23 @@ $jadwal_result = $stmt_jadwal->get_result();
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p><strong>Nama Film: </strong><span><?php echo $film['nama_film'] ?> </span></p>
-                    <p><strong>Nama Mall: </strong><span id="mallName"></span></p>
-                    <p><strong>Jam Tayang: </strong><span id="showtime"></span></p>
-                    <p><strong>Harga Per Tiket: </strong>Rp<span
-                            id="ticketPrice"><?php echo number_format($film['harga'], 0, ',', '.'); ?></span></p>
+                <p><strong style="color: purple;">Nama Film: </strong><span style="color: purple;"><?php echo $film['nama_film']; ?></span></p>
+<p><strong style="color: purple;">Nama Mall: </strong><span id="mallName" style="color: purple;"></span></p>
+<p><strong style="color: purple;">Jam Tayang: </strong><span id="showtime" style="color: purple;"></span></p>
+<p><strong style="color: purple;">Harga Per Tiket: </strong><span style="color: purple;">Rp</span><span style="color: purple;" id="ticketPrice"><?php echo number_format($film['harga'], 0, ',', '.'); ?></span></p>
+
+
 
                     <div class="form-group">
-                        <label for="ticketCount">Jumlah Tiket</label>
+                        <label for="ticketCount" style="color: purple;">Jumlah Tiket</label>
                         <input type="number" class="form-control" id="ticketCount" readonly value="0">
                     </div>
                     <div class="form-group">
-                        <label for="ticketCount">Total Harga TIket</label>
+                        <label for="ticketCount" style="color: purple;">Total Harga TIket</label>
                         <input type="text" class="form-control" id="hargatiket" readonly>
                     </div>
                     <div class="form-group">
-                        <label for="seatSelection">Pilih Kursi</label>
+                        <label for="seatSelection" style="color: purple;">Pilih Kursi</label>
                         <div id="seatSelection" class="d-flex flex-wrap gap-2"></div>
                     </div>
                 </div>
