@@ -52,7 +52,7 @@ $name = $_SESSION['name'];
 $email = $_SESSION['email'];
 $password = password_hash($_SESSION['password'], PASSWORD_DEFAULT); // Hash password
 // Koneksi ke database dan insert data pengguna
-$conn = new mysqli("localhost", "root", "", "
+$conn = new mysqli("localhost", "root", "", "db_bioskop");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
