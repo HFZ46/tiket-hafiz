@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Koneksi ke database
-$conn = new mysqli("localhost", "root", "", "agung");
+$conn = new mysqli("localhost", "root", "", "db_bioskop");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
